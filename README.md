@@ -31,11 +31,6 @@ El programa incluye los siguientes archivos:
 
 Descarga el proyecto completo desde este repositorio.
 
-Si estás utilizando una computadora:
-1. Haz clic en el botón verde de **Code** en la parte superior del repositorio.
-2. Selecciona **Download ZIP** para descargar todos los archivos como un paquete comprimido.
-3. Descomprime el archivo ZIP en una carpeta de tu elección.
-
 ### Paso 2: Abrir el programa
 
 1. Busca el archivo llamado `index.html` en la carpeta descomprimida.
