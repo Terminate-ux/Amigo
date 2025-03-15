@@ -5,6 +5,8 @@ Juego del Amigo Invisible
 ¡Bienvenido al juego de Amigo Secreto! Este programa te permite sortear un amigo secreto de manera fácil y divertida.
 
 ---
+## Estado del proyecto
+El proyecto está completamente funcional y en su primera versión (1.0.0). Está listo para ser utilizado en cualquier navegador moderno.
 
 ## Requisitos del sistema
 
@@ -13,7 +15,20 @@ Antes de empezar, asegúrate de que cumples con los siguientes requisitos:
 - Acceso a una computadora o dispositivo móvil.
 
 ---
+## Tecnologías utilizadas
+Este proyecto se desarrolló utilizando las siguientes tecnologías:
+- **HTML5:** Estructura de la página.
+- **CSS3:** Estilización del diseño.
+- **JavaScript:** Lógica del programa.
+- **Google Fonts:** Tipografías atractivas.
 
+## Personas-Desarrolladores del Proyecto
+Este proyecto fue desarrollado por:
+- **Federico Barceló** - Diseñador y desarrollador principal.
+
+## Licencia
+Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo `LICENSE` para más detalles.
+  
 ## Archivos del programa
 
 El programa incluye los siguientes archivos:
