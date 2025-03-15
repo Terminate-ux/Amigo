@@ -1,42 +1,44 @@
-const friends = [];
+// Lista para almacenar los nombres de los amigos
+const listaDeAmigos = [];
 
-// Función para adicionar un nombre a la lista
-function agregarAmigo() {
-  const input = document.getElementById("amigo");
-  const name = input.value.trim();
+// Función para añadir un nombre a la lista
+function agregarNombre() {
+  const entrada = document.getElementById("campoNombre");
+  const nombre = entrada.value.trim();
 
-  if (name === "") {
+  if (nombre === "") {
     alert("Por favor, ingresa un nombre válido.");
     return;
   }
 
-  friends.push(name);
-  actualizarListaAmigos();
-  input.value = ""; // Limpia el campo de texto
+  listaDeAmigos.push(nombre); // Añadimos el nombre a la lista
+  actualizarLista(); // Actualizamos la lista visible
+  entrada.value = ""; // Limpiamos el campo de texto
 }
 
-// Función para actualizar la lista visible en la página
-function actualizarListaAmigos() {
-  const friendsList = document.getElementById("listaAmigos");
-  friendsList.innerHTML = "";
+// Función para actualizar la lista en pantalla
+function actualizarLista() {
+  const listaEnPantalla = document.getElementById("listaAmigos");
+  listaEnPantalla.innerHTML = ""; // Limpiamos la lista actual
 
-  friends.forEach((amigo) => {
-    const li = document.createElement("li");
-    li.textContent = amigo;
-    friendsList.appendChild(li);
+  // Recorremos la lista de amigos y los mostramos
+  listaDeAmigos.forEach((amigo) => {
+    const elementoLista = document.createElement("li");
+    elementoLista.textContent = amigo;
+    listaEnPantalla.appendChild(elementoLista);
   });
 }
 
 // Función para sortear un amigo secreto
-function sortearAmigo() {
-  if (friends.length === 0) {
+function sortearAmigoSecreto() {
+  if (listaDeAmigos.length === 0) {
     alert("La lista está vacía. Agrega al menos un nombre.");
     return;
   }
 
-  const randomIndex = Math.floor(Math.random() * friends.length);
-  const amigoSecreto = friends[randomIndex];
+  const indiceAleatorio = Math.floor(Math.random() * listaDeAmigos.length);
+  const amigoSecreto = listaDeAmigos[indiceAleatorio];
 
-  const resultado = document.getElementById("resultado");
-  resultado.innerHTML = `<li>El amigo secreto es: <strong>${amigoSecreto}</strong></li>`;
+  const resultadoEnPantalla = document.getElementById("resultado");
+  resultadoEnPantalla.textContent = `El amigo secreto es: ${amigoSecreto}`;
 }
